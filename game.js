@@ -6,8 +6,8 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 var highScore = localStorage.getItem("simonHighScore") || 0;
-
-$("#high-score").text(highScore);
+let highScoreName = localStorage.getItem("simonHighScoreName") || "None";
+$("#high-score").text(`${highScore} (${highScoreName})`);
 
 $(document).keypress(function () {
   if (!started) {
@@ -96,9 +96,26 @@ function startOver() {
 }
 
 function updateHighScore(score) {
+  const name = $("#player-name").val().trim() || "Anonymous";
   if (score > highScore) {
     highScore = score;
     localStorage.setItem("simonHighScore", highScore);
-    $("#high-score").text(highScore);
+    localStorage.setItem("simonHighScoreName", name);
+    $("#high-score").text(`${highScore} (${name})`);
   }
 }
+
+$("#dark-mode-toggle").click(function () {
+  $("body").toggleClass("dark-mode");
+
+  // Optional: save theme preference
+  const isDark = $("body").hasClass("dark-mode");
+  localStorage.setItem("simonDarkMode", isDark ? "on" : "off");
+});
+
+// Optional: load saved preference on startup
+$(document).ready(function () {
+  if (localStorage.getItem("simonDarkMode") === "on") {
+    $("body").addClass("dark-mode");
+  }
+});
