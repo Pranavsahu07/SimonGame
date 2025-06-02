@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Simon</title>
+  <button id="dark-mode-toggle">🌙 Toggle Dark Mode</button>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
@@ -13,6 +14,11 @@
   <h2 id="level-title">Press A Key to Start</h2>
 
   <div class="scoreboard">
+    <div class="high-score-name">
+  <label for="player-name">Name:</label>
+  <input type="text" id="player-name" placeholder="Enter name" />
+</div>
+
     <p>🎯 Current Score: <span id="current-score">0</span></p>
     <p>🏆 Highest Score: <span id="high-score">0</span></p>
     <button id="restart-btn">🔄 Restart</button>
