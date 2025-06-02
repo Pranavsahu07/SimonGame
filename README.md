@@ -41,7 +41,11 @@
   Open index.html in your web browser (no server needed).
 
 📸 Screenshot
-  ![Screenshot 2025-06-02 145933](https://github.com/user-attachments/assets/491b9193-e6c6-4e42-9e87-33562bc0f75c)
+    Normal Mode
+    ![Screenshot 2025-06-02 151556](https://github.com/user-attachments/assets/7ae7b9c7-64b2-4b08-bd13-b716f50e3c26)
+    Dark Mode
+    ![Screenshot 2025-06-02 151613](https://github.com/user-attachments/assets/32108b9e-04a1-4548-9bd2-94a8087e7db2)
+
 
 
 🛠 Tech Stack :-
