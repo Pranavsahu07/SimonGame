@@ -77,3 +77,52 @@ body {
   background-color: red;
   opacity: 0.8;
 }
+
+.high-score-name {
+  margin-top: 15px;
+}
+
+#player-name {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #FEF2BF;
+  background-color: #fff;
+  color: #011F3F;
+}
+
+#dark-mode-toggle {
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  background-color: #FEF2BF;
+  color: #011F3F;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #FFFFFF;
+}
+
+body.dark-mode .btn {
+  filter: brightness(0.85);
+}
+
+body.dark-mode #restart-btn,
+body.dark-mode #dark-mode-toggle {
+  background-color: #444;
+  color: #FEF2BF;
+}
+
+body.dark-mode input {
+  background-color: #222;
+  color: #fff;
+  border-color: #fff;
+}
